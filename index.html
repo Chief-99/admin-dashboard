@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <title>Admin Dashboard</title>
 </head>
@@ -16,18 +16,20 @@
     <header class="header">
         <div class="search-and-profile-wrapper">
             <div class="search-section">
-                <i class="material-icons search-icon">search</i>
+                <span class="material-symbols-outlined search-icon">search</span>
                 <input type="search" name="search" id="searchbar">
             </div>
             <div class="profile-section">
-                <i class="material-icons notifications-icon">notifications_active</i>
-                <img src="images/morgan-oakley-avatar.png" alt="An avatar of aman with a beanie" class="profile-image" height="40em">
+                <span class="material-symbols-outlined notifications-icon">notifications_active</span>
+                <img src="images/morgan-oakley-avatar.png" alt="An avatar of aman with a beanie" class="profile-image"
+                    height="40em">
                 <p class="profile-name">Morgan Oakley</p>
             </div>
         </div>
-        <div class="user-info-button-wrapper">
+        <div class="user-info-button-wrappser">
             <div class="user-info">
-                <img src="images/morgan-oakley-avatar.png" alt="An avatar of a man with a beanie on his head." class="user-image" height="70em">
+                <img src="images/morgan-oakley-avatar.png" alt="An avatar of a man with a beanie on his head."
+                    class="user-image" height="70em">
                 <p class="greeting">Hi there,</p>
                 <p class="user-name">Morgan Oakley (@morgan)</p>
             </div>
@@ -38,6 +40,56 @@
             </div>
         </div>
     </header>
+
+    <div class="sidebar">
+        <p class="sidebar-heading">
+            <span class="material-symbols-outlined dashboard-icon">dashboard</span>
+            <span class="dashboard-text">Dashboard</span>
+        </p>
+
+        <div class="sidebar-section">
+            <p class="sidebar-item">
+                <span class="material-symbols-outlined home-icon">home</span>
+                <span class="sidebar-item-text">Home</span>
+            </p>
+            <p class="sidebar-item">
+                <span class="material-symbols-outlined profile-icon">id_card</span>
+                <span class="sidebar-item-text">Profile</span>
+            </p>
+            <p class="sidebar-item">
+                <span class="material-symbols-outlined messages-icon">message</span>
+                <span class="sidebar-item-text">Messages</span>
+            </p>
+            <p class="sidebar-item">
+                <span class="material-symbols-outlined history-icon">history</span>
+                <span class="sidebar-item-text">History</span>
+            </p>
+            <p class="sidebar-item">
+                <span class="material-symbols-outlined tasks-icon">task</span>
+                <span class="sidebar-item-text">Tasks</span>
+            </p>
+            <p class="sidebar-item">
+                <span class="material-symbols-outlined communities-icon">groups</span>
+                <span class="sidebar-item-text">Communities</span>
+            </p>
+        </div>
+
+        <div class="sidebar-section">
+            <p class="sidebar-item">
+                <span class="material-symbols-outlined settings-icon">settings</span>
+                <span class="sidebar-item-text">Settings</span>
+            </p>
+            <p class="sidebar-item">
+                <span class="material-symbols-outlined support-icon">help_center</span>
+                <span class="sidebar-item-text">Support</span>
+            </p>
+            <p class="sidebar-item">
+                <span class="material-symbols-outlined privacy-icon">security</span>
+                <span class="sidebar-item-text">Privacy</span>
+            </p>
+        </div>
+
+    </div>
 
 </body>
 
