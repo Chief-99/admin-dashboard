@@ -13,3 +13,23 @@ html {
   text-size-adjust: none;
   hanging-punctuation: first allow-end last;
 }
+
+/* BODY */
+body {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+        'sidebar header'
+        'sidebar main';
+}
+
+/* HEADER */
+header {
+    grid-area: header;
+}
+
+/* SIDEBAR */
+.sidebar {
+    grid-area: sidebar;
+}
