@@ -14,6 +14,18 @@ html {
   hanging-punctuation: first allow-end last;
 }
 
+/* CUSTOM PROPERTIES */
+:root {
+    --purple-text: #070014;
+    --purple-active: #240046;
+    --purple-focus: #3C096C;
+    --purple-main: #5A189A;
+    --purple-200: #E4C2FF;
+    --purple-150: #F8EBFF;  
+
+    --gold-accent: #EBB51E;
+}
+
 /* BODY */
 body {
     display: grid;
@@ -32,4 +44,6 @@ header {
 /* SIDEBAR */
 .sidebar {
     grid-area: sidebar;
+
+    
 }
