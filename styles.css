@@ -20,7 +20,9 @@ html {
     --purple-active: #240046;
     --purple-focus: #3C096C;
     --purple-main: #5A189A;
-    --purple-200: #E4C2FF;
+    --purple-250: #C885FF;
+    --purple-225: #D199FF;
+    --purple-200: #d9c5fd;
     --purple-150: #F8EBFF;
 
     --gold-accent: #EBB51E;
@@ -85,4 +87,103 @@ header {
 .sidebar-section {
     display: grid;
     gap: 1.5rem;
+}
+
+/* HEADER */
+.header {
+    height: min-content;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    gap: 2rem;
+    color: var(--purple-text);
+}
+
+.search-profile-wrapper {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    justify-items: stretch;
+}
+
+.search-profile-wrapper > * {
+    align-content: center;
+}
+
+.search-section {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    padding: 1rem 15rem 1rem 1rem;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.search-section * {
+    font-size: 1rem;
+}
+
+.search-section #searchbar {
+    border-radius: 20rem;
+    border: none;
+    background-color: var(--purple-200);
+    padding: 0.5rem 0.75rem;
+}
+
+.search-section #searchbar:focus, 
+.search-section #searchbar:hover {
+    outline: none;
+    background-color: var(--purple-225);
+}
+
+.search-section #searchbar:active {
+    background-color: var(--purple-250);
+}
+
+.profile-section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, max-content);
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.user-info-button-wrapper {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+.user-profile {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.greeting,
+.user-name {
+    font-weight: bold;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    align-items: center;
+    gap: 3rem;
+}
+
+.header-buttons button {
+    background-color: var(--purple-main);
+    border: none;
+    color: var(--purple-150);
+    padding: 0.75rem 1.5rem;
+    width: fit-content;
+    border-radius: 20rem;
+    font-size: 0.9em;
+    font-weight: bold;
 }
