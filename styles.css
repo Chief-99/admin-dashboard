@@ -110,6 +110,10 @@ header {
     color: var(--purple-200);
 }
 
+.sidebar-item:active {
+    color: var(--purple-225);
+}
+
 /* HEADER */
 .header {
     height: min-content;
