@@ -14,7 +14,7 @@ html {
     hanging-punctuation: first allow-end last;
 }
 
-/* CUSTOM PROPERTIES */
+/*& CUSTOM PROPERTIES */
 :root {
     --purple-text: #070014;
     --purple-active: #240046;
@@ -29,7 +29,7 @@ html {
     --gray: rgb(104, 104, 104);
 }
 
-/* BODY */
+/*& BODY */
 body {
     display: grid;
     grid-template-rows: 1fr 4fr;
@@ -40,12 +40,12 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-/* HEADER */
+/*& HEADER */
 header {
     grid-area: header;
 }
 
-/* SIDEBAR */
+/*& SIDEBAR */
 .sidebar {
     grid-area: sidebar;
     background-color: var(--purple-main);
@@ -75,7 +75,7 @@ header {
     margin-right: 0.5rem;
 }
 
-.sidebar .sidebar-item .sidebar-icon {
+.sidebar-icon {
     font-variation-settings:
         'FILL' 1;
     margin-right: 0.5rem;
@@ -88,6 +88,26 @@ header {
 .sidebar-section {
     display: grid;
     gap: 1.5rem;
+}
+
+/*? SIDEBAR HOVER */
+.sidebar-item {
+    transform-origin: left;
+    transition: color 300ms;
+}
+
+.sidebar-icon {
+    transition: transform 300ms, font-variation-settings 300ms;
+}
+
+.sidebar-item:hover .sidebar-icon{
+    transform: scale(1.2);
+    font-variation-settings: 
+        'FILL' 0;
+}
+
+.sidebar-item:hover {
+    color: var(--purple-200);
 }
 
 /* HEADER */
