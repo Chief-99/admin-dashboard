@@ -26,7 +26,7 @@ html {
     --purple-150: #F8EBFF;
 
     --gold-accent: #ffd30f;
-    --gray: gray;
+    --gray: rgb(104, 104, 104);
 }
 
 /* BODY */
@@ -244,4 +244,38 @@ header {
 
 .project-title {
     font-size: 1.1rem;
+}
+
+.project-description {
+    color: var(--gray)
+}
+
+/* ANNOUNCEMENTS */
+.announcements-section {
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+}
+
+.announcements-container {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 5px;
+
+    display: grid;
+    gap: 1rem;
+}
+
+.announcement:not(:last-child) {
+    border-bottom: solid 1px rgb(187, 187, 187);
+}
+
+.announcement .announcement-heading {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.announcement .announcement-content {
+    color: var(--gray);
+    margin-bottom: 1rem;
 }
