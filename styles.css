@@ -279,3 +279,39 @@ header {
     color: var(--gray);
     margin-bottom: 1rem;
 }
+
+/* TRENDING */
+.trending-section {
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+}
+
+.trending-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem;
+
+    display: grid;
+    gap: 1rem;
+}
+
+.trending-container .trending-project {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    gap: 1rem; 
+}
+
+.trending-project .trending-project-details {
+    display: grid;
+    align-content: center;
+    gap: 0.25rem;
+}
+
+.trending-project .trending-username {
+    font-weight: bold;
+}
+
+.trending-project .trending-project-name {
+    color: var(--gray);
+}
