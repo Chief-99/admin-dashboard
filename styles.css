@@ -214,15 +214,34 @@ header {
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
     gap: 1.5rem;
 }
 
 .projects-container .project-card {
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
     border-left: solid var(--gold-accent) 10px;
     border-radius: 5px;
     
     display: grid;
-    grid-template-rows: repeat(3, max-content);
+    gap: 3rem;
+    align-content: space-between;
+}
+
+.projects-container .project-card .project-card-text {
+    display: grid;
+    gap: 1rem;
+}
+
+.projects-container .project-card .project-icon-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    justify-content: end;
+    gap: 3rem;
+}
+
+.project-title {
+    font-size: 1.1rem;
 }
