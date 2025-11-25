@@ -195,7 +195,6 @@ header {
 
     display: grid;
     grid-template-columns: 7fr 3fr;
-    grid-template-rows: 1fr 1fr;
     padding: 2rem;
     gap: 2rem;
     grid-template-areas: 
@@ -293,7 +292,7 @@ header {
     padding: 2rem;
 
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .trending-container .trending-project {
@@ -314,4 +313,11 @@ header {
 
 .trending-project .trending-project-name {
     color: var(--gray);
+}
+
+span, img, .profile-name,
+button, .project-title, .project-description,
+.announcement-heading, .announcement-content,
+.trending-project p {
+    cursor: pointer;
 }
