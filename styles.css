@@ -256,6 +256,9 @@ header {
     color: var(--purple-main);
 }
 
+.user-image {
+    pointer-events: none;
+}
 
 /* MAIN CONTENT */
 .main-content {
