@@ -270,6 +270,10 @@ header {
         'projects trending';
 }
 
+.main-heading {
+    font-size: 1.5rem;
+}
+
 /* USER PROJECTS */
 .projects-section {
     grid-area: projects;
