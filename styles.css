@@ -92,7 +92,6 @@ header {
 
 /*? SIDEBAR HOVER */
 .sidebar-item {
-    transform-origin: left;
     transition: color 300ms;
 }
 
@@ -107,14 +106,14 @@ header {
 }
 
 .sidebar-item:hover {
-    color: var(--purple-200);
-}
-
-.sidebar-item:active {
     color: var(--purple-225);
 }
 
-/* HEADER */
+.sidebar-item:active {
+    color: var(--purple-250);
+}
+
+/*& HEADER */
 .header {
     height: min-content;
     padding: 1rem;
@@ -212,6 +211,9 @@ header {
     font-size: 0.9em;
     font-weight: bold;
 }
+
+/*? HEADER HOVER */
+
 
 /* MAIN CONTENT */
 .main-content {
