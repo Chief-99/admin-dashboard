@@ -19,11 +19,11 @@ html {
     --purple-text: #070014;
     --purple-active: #240046;
     --purple-focus: #3C096C;
-    --purple-main: #5A189A;
+    --purple-main: #6a189a;
     --purple-250: #C885FF;
     --purple-225: #D199FF;
     --purple-200: #d9c5fd;
-    --purple-150: #F8EBFF;
+    --purple-150: #f5e2ff;
 
     --gold-accent: #ffd30f;
     --gray: rgb(104, 104, 104);
@@ -38,6 +38,10 @@ body {
         'sidebar header'
         'sidebar main';
     font-family: Roboto, sans-serif;
+}
+
+img:hover {
+    filter: brightness(90%);
 }
 
 /*& HEADER */
@@ -77,7 +81,7 @@ header {
 
 .sidebar-icon {
     font-variation-settings:
-        'FILL' 1;
+        'FILL' 0;
     margin-right: 0.5rem;
 }
 
@@ -92,17 +96,17 @@ header {
 
 /*? SIDEBAR HOVER */
 .sidebar-item {
-    transition: color 300ms;
+    transition: color 250ms;
 }
 
 .sidebar-icon {
-    transition: transform 300ms, font-variation-settings 300ms;
+    transition: transform 250ms, font-variation-settings 250ms;
 }
 
 .sidebar-item:hover .sidebar-icon{
     transform: scale(1.2);
     font-variation-settings: 
-        'FILL' 0;
+        'FILL' 1;
 }
 
 .sidebar-item:hover {
@@ -145,21 +149,11 @@ header {
     font-size: 1rem;
 }
 
-.search-section #searchbar {
+#searchbar {
     border-radius: 20rem;
     border: none;
     background-color: var(--purple-150);
     padding: 0.5rem 0.75rem;
-}
-
-.search-section #searchbar:focus, 
-.search-section #searchbar:hover {
-    outline: none;
-    background-color: var(--purple-200);
-}
-
-.search-section #searchbar:active {
-    background-color: var(--purple-225);
 }
 
 .profile-section {
@@ -170,6 +164,10 @@ header {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+}
+
+.notifications-icon {
+    font-variation-settings: 'FILL' 0;
 }
 
 .user-info-button-wrapper {
@@ -213,6 +211,37 @@ header {
 }
 
 /*? HEADER HOVER */
+#searchbar {
+    transition: background-color 250ms;
+}
+
+#searchbar:focus, 
+#searchbar:hover {
+    outline: none;
+    background-color: var(--purple-200);
+}
+
+#searchbar:active {
+    background-color: var(--purple-225);
+}
+
+.notifications-icon {
+    transition: font-variation-settings 250ms, transform 250ms, color 250ms;
+}
+
+.notifications-icon:hover {
+    transform: scale(1.2);
+    font-variation-settings: 'FILL' 1;
+    color: var(--purple-main);
+}
+
+.profile-name {
+    transition: color 250ms;
+}
+
+.profile-name:hover {
+    color: var(--purple-main);
+}
 
 
 /* MAIN CONTENT */
