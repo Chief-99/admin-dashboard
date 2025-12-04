@@ -260,7 +260,7 @@ header {
     pointer-events: none;
 }
 
-/* MAIN CONTENT */
+/*& MAIN CONTENT */
 .main-content {
     background-color: var(--purple-150);
 
@@ -277,7 +277,7 @@ header {
     font-size: 1.5rem;
 }
 
-/* USER PROJECTS */
+/*& USER PROJECTS */
 .projects-section {
     grid-area: projects;
     display: grid;
@@ -295,8 +295,8 @@ header {
 .projects-container .project-card {
     background-color: white;
     padding: 2rem;
-    border-left: solid var(--gold-accent) 10px;
-    border-radius: 5px;
+    border-left: solid var(--gold-accent) 0.8rem;
+    border-radius: 8px;
     
     display: grid;
     gap: 3rem;
@@ -324,7 +324,17 @@ header {
     color: var(--gray)
 }
 
-/* ANNOUNCEMENTS */
+/*? USER PROJECTS HOVER */
+.project-card {
+    transition: border-left-color 300ms;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    border-left-color: var(--purple-250);
+}
+
+/*& ANNOUNCEMENTS */
 .announcements-section {
     display: grid;
     align-content: start;
@@ -354,7 +364,7 @@ header {
     margin-bottom: 1rem;
 }
 
-/* TRENDING */
+/*& TRENDING */
 .trending-section {
     display: grid;
     align-content: start;
