@@ -230,7 +230,7 @@ header {
 }
 
 .notifications-icon {
-    transition: font-variation-settings 250ms, transform 250ms, color 250ms;
+    transition: font-variation-settings 150ms, transform 150ms, color 200ms;
 }
 
 .notifications-icon:hover {
@@ -327,11 +327,32 @@ header {
 /*? USER PROJECTS HOVER */
 .project-card {
     transition: border-left-color 300ms;
-    cursor: pointer;
 }
 
 .project-card:hover {
-    border-left-color: var(--purple-250);
+    border-left-color: var(--purple-main);
+}
+
+.project-title, 
+.project-description {
+    transition: text-decoration 300ms;
+    cursor: pointer;
+}
+
+.project-card-text:has(:hover) .project-title,
+.project-card-text:has(:hover) .project-description {
+    text-decoration: underline;
+}
+
+.project-icon {
+    font-variation-settings: 
+        'FILL' 0;
+    transition: font-variation-settings 150ms;
+}
+
+.project-icon:hover {
+    font-variation-settings: 
+        'FILL' 1;
 }
 
 /*& ANNOUNCEMENTS */
