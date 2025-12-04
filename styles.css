@@ -385,6 +385,12 @@ header {
     margin-bottom: 1rem;
 }
 
+/*? ANNOUNCEMENTS HOVER */
+.announcement:has(:hover) .announcement-heading,
+.announcement:has(:hover) .announcement-content {
+    text-decoration: underline;
+}
+
 /*& TRENDING */
 .trending-section {
     display: grid;
@@ -419,6 +425,12 @@ header {
 
 .trending-project .trending-project-name {
     color: var(--gray);
+}
+
+/*? TRENDING HOVER */
+.trending-username:hover,
+.trending-project-name:hover {
+    text-decoration: underline;
 }
 
 span, img, .profile-name,
